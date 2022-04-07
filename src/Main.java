@@ -38,7 +38,7 @@ public class Main {
                 visual = input.nextDouble();
                 System.out.print("Nilai Kemampuan dan Design Thinking : ");
                 design = input.nextDouble();
-            } while(struktur>=0 || struktur<=100 || visual>=0 || visual<=100 || design>=0 || design<=0);
+            } while(struktur > 100 || struktur < 0 || visual > 100 || visual < 0 || design < 0 || design > 100);
             do {
                 System.out.println("--------");
                 System.out.println("| Menu |");
@@ -46,7 +46,7 @@ public class Main {
                 System.out.println("1. Tampilkan hasil");
                 System.out.println("2. Ubah nilai");
                 System.out.println("3. Keluar");
-                System.out.println("Pilih : ");
+                System.out.print("Pilih : ");
                 pil2 = input.nextInt();
                 if(pil2 == 1) {
                     Seleksi seleksi;
@@ -76,18 +76,18 @@ public class Main {
                         visual = input.nextDouble();
                         System.out.print("Nilai Kemampuan dan Design Thinking : ");
                         design = input.nextDouble();
-                    } while(struktur>=0 || struktur<=100 || visual>=0 || visual<=100 || design>=0 || design<=0);
+                    } while(struktur > 100 || struktur < 0 || visual > 100 || visual < 0 || design < 0 || design > 100);
                 }
-            } while(pil != 3);
+            } while(pil2 != 3);
 
         }
         else if(pil == 2) {
             System.out.println("--------------------");
             System.out.println("| Form Pendaftaran |");
             System.out.println("--------------------");
-            System.out.println("Nama lengkap : ");
+            System.out.print("Nama lengkap : ");
             nama = input.next();
-            System.out.println("Usia         : ");
+            System.out.print("Usia         : ");
             usia = input.nextInt();
             do {
                 System.out.println("------------------");
@@ -101,7 +101,7 @@ public class Main {
                 relevansi = input.nextDouble();
                 System.out.print("Nilai Kemampuan Problem Solving  : ");
                 solving = input.nextDouble();
-            } while(jurnal>=0 || jurnal<=100 || relevansi>=0 || relevansi<=100 || solving>=0 || solving<=0);
+            } while(jurnal > 100 || jurnal < 0 || relevansi > 100 || relevansi < 0 || solving < 0 || solving > 100);
             do {
                 System.out.println("--------");
                 System.out.println("| Menu |");
@@ -139,7 +139,7 @@ public class Main {
                         relevansi = input.nextDouble();
                         System.out.print("Nilai Kemampuan Problem Solving  : ");
                         solving = input.nextDouble();
-                    } while(jurnal>=0 || jurnal<=100 || relevansi>=0 || relevansi<=100 || solving>=0 || solving<=0);
+                    } while(jurnal > 100 || jurnal < 0 || relevansi > 100 || relevansi < 0 || solving < 0 || solving > 100);
                 }
             } while(pil3 != 3);
 
